@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Can I Jailbreak</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <script src="https://www.w3schools.com/lib/w3.js"></script>
+        <style>
+            body {
+                text-align: center;
+                background-color: black;
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="content">
+            <h1 style="text-align: center;">Can I Jailbreak</h1>
+            <p style="text-align: center; font-size: 5px; color: white;"></p>
+            <h3>Instructions:</h3>
+            <li>Use the drop-down menu to check if you can Jailbreak your iDevice</li>
+            <li>The newest iOS/iPadOS version is 14.6</li>
+            <li>The currently compatible jailbreaks for iOS/iPadOS 14 are: 
+                <a href="https://taurine.app" target="_blank">Taurine</a>, 
+                <a href="https://checkra.in" target="_blank">Checkra1n</a> and
+                <a href="https://unc0ver.dev" target="_blank">Unc0ver</a>
+            </li>
+            <li>Instructions on how to Jailbreak your device (in English) can be found at <a href="https://ios.cfw.guide" target="_blank">ios.cfw.guide</a></li>
+        </div>
+        <div class="compatibility">
+            <p>Select your OS version:</p>
+            <select id="iOS" name="form_select" onclick="showDiv(this)">
+                <option value="0">iOS/iPadOS 15 beta 1</option>
+                <option value="146">iOS/iPadOS 14.4 - 14.6</option>
+                <option value="143">iOS/iPadOS 14.0 - 14.3</option>
+                <option value="137">iOS/iPadOS 13.0 - 13.7</option>
+                <option value="1254">iOS 12.0 - 12.5.4</option>
+                <option value="1212">iOS 12.0 - 12.1.2</option>
+                <option value="1141">iOS 11.0 - 11.4.1</option>
+            </select>
+        </div>
+
+        <div class="header2">
+            <a style="text-decoration:none; color:black">
+                <div id="hidden_yes143" style="background-color:white; display: none; color:black;">You can Jailbreak your device using <a href="https://taurine.app" style="color: black;" target="_blank">Taurine</a> and <a href="https://checkra.in" style="color: black;" target="_blank">Checkra1n</a></div>
+            </a>
+        
+            <a style="text-decoration: none; color:black">
+                <div id="hidden_a11yes" style="background-color: yellow; display: none;">You can Jailbreak your device <mark>if you're on an A9-A11 device</mark> with <a href="https://checkra.in" style="color: black;" target="_blank">Checkra1n</a></div>
+            </a>
+
+            <a style="text-decoration: none; color:black">
+                <div id="hidden_no" style="background-color: red; display: none;">You <mark>can't</mark> Jailbreak your device</div>
+            </a>
+
+            <a style="text-decoration: none; color:black">
+                <div id="hidden_yes137" style="background-color: white; display: none; color: black;">You can Jailbreak your device using <a href="https://theodyssey.dev" style="color: black;" target="_blank">Odyssey</a> and <a href="https://checkra.in" style="color: black;" target="_blank">Checkra1n</a></div>
+            </a>
+
+            <a style="text-decoration: none; color:black">
+                <div id="hidden_yes1254" style="background-color: white; display: none; color: black;">You can Jailbreak your device using <a href="https://chimera.sh" style="color: black;" target="_blank">Chimera</a> and <a href="https://checkra.in" style="color: black;" target="_blank">Checkra1n</a> <mark>if you're on an A7-A11 device</mark></div>
+            </a>
+
+            <a style="text-decoration: none; color:black">
+                <div id="hidden_yes1212" style="background-color: white; display: none; color: black;">You can Jailbreak your device using <a href="https://chimera.sh" style="color: black;" target="_blank">Chimera</a> and <a href="https://checkra.in" style="color: black;" target="_blank">Checkra1n</a> <mark>(A7-A12)</mark></div>
+            </a>
+
+            <a style="text-decoration: none; color:black">
+                <div id="hidden_yes1141" style="background-color: white; display: none; color: black;">You can Jailbreak your device using <a href="https://coolstar.org/electra/" style="color: black;" target="_blank">Electra</a></div>
+            </a>
+        </div>
+
+        <script>
+            function showDiv(select){
+                if(select.value==0){
+                    document.getElementById('hidden_no').style.display = "block";
+                }
+                else{
+                    document.getElementById('hidden_no').style.display = "none";
+                }
+
+                if(select.value==143){
+                    document.getElementById('hidden_yes143').style.display = "block"
+                }
+                else{
+                    document.getElementById('hidden_yes143').style.display = "none"
+                }
+
+                if(select.value==146){
+                    document.getElementById('hidden_a11yes').style.display = "block"
+                }
+                else{
+                    document.getElementById('hidden_a11yes').style.display = "none"
+                }
+
+                if(select.value==137){
+                    document.getElementById('hidden_yes137').style.display = "block"
+                }
+                else{
+                    document.getElementById('hidden_yes137').style.display = "none"
+                }
+
+                if(select.value==1254){
+                    document.getElementById('hidden_yes1254').style.display = "block"
+                }
+                else{
+                    document.getElementById('hidden_yes1254').style.display = "none"
+                }
+
+                if(select.value==1212){
+                    document.getElementById('hidden_yes1212').style.display = "block"
+                }
+                else{
+                    document.getElementById('hidden_yes1212').style.display = "none"
+                }
+
+                if(select.value==1141){
+                    document.getElementById('hidden_yes1141').style.display = "block"
+                }
+                else{
+                    document.getElementById('hidden_yes1141').style.display = "none"
+                }
+            }
+        </script>
+    </body>
+</html>
